@@ -25,5 +25,7 @@ RUN pip3 install setuptools && pip3 install ansible==2.10.7
 
 RUN ansible --version
 
+RUN uname --kernel-name --kernel-release --kernel-version
+
 ADD ansible-docker.sh /ansible-docker.sh
 ENTRYPOINT ["/ansible-docker.sh"]
