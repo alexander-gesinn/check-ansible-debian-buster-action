@@ -21,7 +21,7 @@ RUN apt-get update -y && apt-get install -y \
     git \
     systemd
 
-RUN pip3 install setuptools && pip3 install ansible==2.10.15
+RUN pip3 install setuptools && pip3 install ansible==2.10.7
 
 RUN ansible --version
 
